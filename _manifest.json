@@ -36,7 +36,7 @@
     }
   ],
   "plugin_type": "management",
-  "capabilities": ["send_message"],
+  "capabilities": ["config"],
   "i18n": {
     "default_locale": "zh-CN",
     "supported_locales": ["zh-CN", "en-US"]
