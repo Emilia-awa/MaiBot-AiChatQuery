@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "id": "com.emilia-awa.ai-chat-query",
+  "version": "1.0.0",
+  "name": "AI 对话查询插件",
+  "description": "自助查询 AI 对话状态、申请开启，管理员通过私聊审批，直接写入 NapCat 适配器白名单。",
+  "author": {
+    "name": "Emilia Awa",
+    "url": "https://github.com/emilia-awa"
+  },
+  "license": "GPL-3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/Emilia-awa/MaiBot-AiChatQuery",
+    "homepage": "https://github.com/Emilia-awa/MaiBot-AiChatQuery",
+    "documentation": "https://github.com/Emilia-awa/MaiBot-AiChatQuery",
+    "issues": "https://github.com/Emilia-awa/MaiBot-AiChatQuery/issues"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "plugin",
+      "id": "maibot-team.napcat-adapter",
+      "version_spec": ">=1.1.0"
+    },
+    {
+      "type": "python_package",
+      "name": "aiohttp",
+      "version_spec": ">=3.8"
+    }
+  ],
+  "plugin_type": "management",
+  "capabilities": ["send_message"],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN", "en-US"]
+  }
+}

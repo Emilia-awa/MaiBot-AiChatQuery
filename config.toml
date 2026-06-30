@@ -1,0 +1,33 @@
+[plugin]
+config_version = "1.0.0"
+enabled = true
+
+[napcat]
+# 直连 NapCat 端口 B 的 WebSocket 地址（无需修改端口 A 适配器）
+ws_host = "127.0.0.1"
+ws_port = 3002
+token = ""
+
+[commands]
+# 自定义命令列表 — 设置后覆盖默认命令
+# 若不设置或留空，则使用默认命令
+# query_commands = ["/查询ai聊天"]
+# apply_commands = ["/开启ai聊天"]
+# approve_commands = ["/通过申请"]
+# reject_commands = ["/拒绝申请"]
+# list_all_commands = ["/查申请"]
+
+# 是否要求命令以 / 开头
+enable_slash_prefix = true
+
+[admin]
+# 超级管理员 QQ 号 — 审批命令仅限此账号在私聊中使用
+super_admin_qq = ""
+
+# napcat 适配器 config.toml 路径
+# 留空时自动检测：../maibot-team_napcat-adapter/config.toml
+napcat_config_path = ""
+
+[reply]
+# 机器人昵称 — 留空时启动后自动获取
+bot_nickname = ""
