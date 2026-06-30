@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "id": "com.emilia-awa.ai-chat-query",
+  "id": "emilia-awa.ai-chat-query",
   "version": "1.0.0",
   "name": "AI 对话查询插件",
   "description": "自助查询 AI 对话状态、申请开启，管理员通过私聊审批，直接写入 NapCat 适配器白名单。",
